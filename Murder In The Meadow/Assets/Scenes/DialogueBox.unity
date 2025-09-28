@@ -1310,9 +1310,10 @@ MonoBehaviour:
   dialogueText: {fileID: 1313525948}
   nameText: {fileID: 331424439}
   dialoguePanel: {fileID: 2017192672}
-  currDialogues: []
-  currName: 
-  i: 0
+  currDialogues:
+  - 'Hello, my name is Derry the Platypus! Welcome to Murder in the Meadow.  '
+  - 'To move, press WASD. To interact, press E. Go ahead and explore the room. '
+  currName: Derry the Platypus
 --- !u!1 &1064245910
 GameObject:
   m_ObjectHideFlags: 0

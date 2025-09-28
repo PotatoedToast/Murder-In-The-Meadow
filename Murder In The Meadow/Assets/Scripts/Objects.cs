@@ -20,14 +20,6 @@ public class Objects : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other) {
-        canInteract = true;
-    }
-
-    private void OnTriggerExit(Collider other) {
-        canInteract = false;
-    }
-
     public void Investigate(Tool tool) {
         if (tool != null && tool.toolName == toolNeeded) {
             DialogueController.Instance.StartDialogue(success.dialogue, success.name);

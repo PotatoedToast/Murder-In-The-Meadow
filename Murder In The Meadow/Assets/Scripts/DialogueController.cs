@@ -6,18 +6,15 @@ public class DialogueController : MonoBehaviour {
     public TextMeshProUGUI nameText;
     public GameObject dialoguePanel;
 
-    public string[] currDialogues;
-    public string currName;
-    public int i = 0;
+    [SerializeField] string[] currDialogues;
+    [SerializeField] string currName;
+    private int i = 0;
 
     public static DialogueController Instance;
 
     void Start() {
         Instance = this;
-        string[] d = {"Hello, my name is Derry the Platypus! Welcome to Murder in the Meadow.", 
-                        "To move, press WASD. To interact, press [E]. Go ahead and explore the room."};
-        string n = "Derry the Platypus";
-        StartDialogue(d, n);
+        StartDialogue(currDialogues, currName);
     }
 
     void Update()
