@@ -15,7 +15,7 @@ public class DialogueController : MonoBehaviour {
     void Start() {
         Instance = this;
         string[] d = {"Hello, my name is Derry the Platypus! Welcome to Murder in the Meadow.", 
-                        "To move, press WASD. To interact, press E. Go ahead and explore the room."};
+                        "To move, press WASD. To interact, press [E]. Go ahead and explore the room."};
         string n = "Derry the Platypus";
         StartDialogue(d, n);
     }

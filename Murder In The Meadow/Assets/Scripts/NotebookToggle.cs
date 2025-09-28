@@ -13,6 +13,12 @@ public class NotebookToggle : MonoBehaviour {
         notebookUI.SetActive(false);
     }
 
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            toggle();
+        }
+    }
+
     public void toggle() {
         if (on) {
             CloseNotebook();

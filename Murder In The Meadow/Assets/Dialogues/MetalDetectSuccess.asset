@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Results
   dialogue:
   - Investigating....
-  - 'You found the murder weapon: a knife.'
+  - You found the murder weapon: a knife.
