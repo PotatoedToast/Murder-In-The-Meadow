@@ -1080,8 +1080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.0425034, y: 0}
+  m_SizeDelta: {x: -26.5762, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809268676
 MonoBehaviour:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Toggle Notebook
+  m_text: 'Toggle Journal [Z]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18ba2e17471264fae87807d59a4c0986, type: 2}
   m_sharedMaterial: {fileID: 1706457027809865328, guid: 18ba2e17471264fae87807d59a4c0986, type: 2}
@@ -1130,8 +1130,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1858,8 +1858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 858.9547, y: 466.5}
-  m_SizeDelta: {x: 176.0033, y: 97.005}
+  m_AnchoredPosition: {x: 852.77356, y: 466.5}
+  m_SizeDelta: {x: 188.3656, y: 97.005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794233761
 MonoBehaviour:
@@ -1904,19 +1904,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1794233762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1801456168}
-        m_TargetAssemblyTypeName: NotebookToggle, Assembly-CSharp
-        m_MethodName: toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1794233762
 MonoBehaviour:
   m_ObjectHideFlags: 0
