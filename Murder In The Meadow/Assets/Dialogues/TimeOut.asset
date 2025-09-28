@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   name: Derry the Platypus
   dialogue:
-  - 'Oh no, we only have 30 seconds left to explore this room! We gotta speed things
-    us. '
-  - When you are ready, press Q to go to the next room.
+  - Oh no, we only have 30 seconds left to explore this room. Time to speed things
+    up!

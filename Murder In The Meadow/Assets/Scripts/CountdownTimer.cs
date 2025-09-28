@@ -8,6 +8,7 @@ public class CountdownTimer : MonoBehaviour
 
     public float timeRemaining;
     public bool timerIsRunning = false; 
+    public DialogueAsset timeout;
 
     public TextMeshProUGUI timeText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +25,9 @@ public class CountdownTimer : MonoBehaviour
             if (timeRemaining > 0) {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                if (timeRemaining < 30 && timeRemaining > 29.5) {
+                    DialogueController.Instance.StartDialogue(timeout.dialogue, timeout.name);
+                }
             } else {
                 
                 timeRemaining = 0;
@@ -58,5 +62,9 @@ public class CountdownTimer : MonoBehaviour
                 timeRemaining = 120f;
                 break;
         }
+    }
+
+    void DisplayTimeWarning() {
+
     }
 }
