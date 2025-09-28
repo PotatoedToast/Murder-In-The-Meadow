@@ -9,6 +9,7 @@ public class NotebookToggle : MonoBehaviour {
     public Button button;
 
     void Start() {
+        PlayerPrefs.SetString("murder_notes", "Write any useful notes here.");
         notebookUI.SetActive(false);
     }
 
@@ -21,13 +22,16 @@ public class NotebookToggle : MonoBehaviour {
     }
 
     public void OpenNotebook() {
+        userNotes.text = PlayerPrefs.GetString("murder_notes");
         notebookUI.SetActive(true);
         on = true;
     }
 
     public void CloseNotebook() {
         notebookUI.SetActive(false);
+        PlayerPrefs.SetString("murder_notes", userNotes.text);
         on = false;
+
     }
 
 }
