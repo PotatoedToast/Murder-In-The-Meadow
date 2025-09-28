@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3cd2c633612440b48260051703823f0, type: 3}
-  m_Name: BloodyFabric
+  m_Name: FinancialStatement
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   name: Derry the Platypus
   dialogue:
-  - Even more fabric! Who could it be from?
+  - There's quite a lot of overdue bills here, looks like someone was broke!
+  - Could there be a financial motivation here?
