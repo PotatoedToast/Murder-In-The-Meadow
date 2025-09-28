@@ -5,9 +5,9 @@ using System;
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(SpriteRenderer))]
 
-public class Player_Movement : MonoBehaviour
+public class Player_Controller : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float _speed = 10f;
 
     private InputSystem_Actions _playerInputActions;
     private Vector3 _input;
@@ -27,12 +27,14 @@ public class Player_Movement : MonoBehaviour
     private void OnEnable(){
         _playerInputActions.Player.Enable();
         _playerInputActions.Player.Tool.performed += UseTool; 
+        _playerInputActions.Player.Previous.performed += UseTool; 
 
     }
     
     private void OnDisable(){
         _playerInputActions.Player.Disable();
         _playerInputActions.Player.Tool.performed -= UseTool;
+        _playerInputActions.Player.Previous.performed += UseTool; 
 
     }
 
@@ -43,7 +45,7 @@ public class Player_Movement : MonoBehaviour
     }
 
     private void Move(){
-        Vector3 moveDirection = _input * speed * Time.deltaTime;
+        Vector3 moveDirection = _input * _speed * Time.deltaTime;
         _characterController.Move(moveDirection);
     }
 
@@ -67,17 +69,27 @@ public class Player_Movement : MonoBehaviour
     }
 
     private void UpdateSprintDirection(){
-        float horizontalMovement = _input.x;
-        if (horizontalMovement > 0) // Moving Screen-Right
-            {
-                // Assign the sprite you want to use when the character walks right
-                _spriteRenderer.sprite = walkRightSprite;
+        if(_speed != 0){
+            float horizontalMovement = _input.x;
+            if (horizontalMovement != 0)
+                {
+                if (horizontalMovement > 0) // Moving Screen-Right
+                {
+                    // Assign the sprite you want to use when the character walks right
+                    _spriteRenderer.sprite = walkRightSprite;
+                }
+                else // Moving Screen-Left
+                {
+                    // Assign the sprite you want to use when the character walks left
+                    _spriteRenderer.sprite = walkLeftSprite;
+                }
             }
-            else // Moving Screen-Left
-            {
-                // Assign the sprite you want to use when the character walks left
-                _spriteRenderer.sprite = walkLeftSprite;
-            }
+        }
+        
+    }
+
+    public void setSpeed(int num){
+        _speed = num;
     }
 
     private void UseTool(InputAction.CallbackContext context)
@@ -88,6 +100,10 @@ public class Player_Movement : MonoBehaviour
     
         switch (controlPath)
         {
+            case "/Keyboard/q":
+            case "/Keyboard/Q":
+                GameManager.Instance._ToolController.HidePanel(); 
+                return;
             case "/Keyboard/1":
                 toolIndex = 0; // Index 0 for Tool 1
                 break;
@@ -103,6 +119,7 @@ public class Player_Movement : MonoBehaviour
             default:
                 return;
         }
+
         GameManager.Instance._ToolController.DisplayTool(toolIndex);
 
     }

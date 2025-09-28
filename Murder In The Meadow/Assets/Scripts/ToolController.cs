@@ -24,7 +24,7 @@ public class ToolController : MonoBehaviour
         _toolPanel.gameObject.SetActive(true);
     }
     
-    private void HidePanel()
+    public void HidePanel()
     {
         _toolPanel.gameObject.SetActive(false);
     }

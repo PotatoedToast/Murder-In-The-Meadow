@@ -8,6 +8,8 @@ interface IInteractable{
     
     void Interact();
 
+    void Close();
+
     void Highlight(bool isHighlighted);
 }
 
@@ -24,6 +26,7 @@ public class Interactor : MonoBehaviour
     {
         _playerInputActions = new InputSystem_Actions();
         _playerInputActions.Player.Interact.started += Interact_Performed; 
+        _playerInputActions.Player.Previous.started += closeWindow; 
         _currentInteractable = null;
 
      }
@@ -71,6 +74,10 @@ public class Interactor : MonoBehaviour
         {
             _currentInteractable.Interact();
         }
+    }
+
+    private void closeWindow(InputAction.CallbackContext context){
+        _currentInteractable.Close();
     }
         
 

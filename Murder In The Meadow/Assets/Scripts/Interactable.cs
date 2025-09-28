@@ -21,11 +21,18 @@ public class Interactable : MonoBehaviour, IInteractable
     public void Interact(){
         if (windowController != null)
         {
-            windowController.ToggleWindow(); 
+            windowController.OpenWindow(); 
         }
         else
         {
             Debug.LogError("InteractWindowScript reference is missing on the Interactable object: " + gameObject.name);
+        }
+    }
+
+    public void Close(){
+
+        if (windowController != null){
+            windowController.HideWindow();
         }
     }
 

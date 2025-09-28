@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ToolController _toolController;
 
     public ToolController _ToolController => _toolController;
+    
 
     private void Awake()
     {

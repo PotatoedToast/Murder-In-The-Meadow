@@ -7,6 +7,7 @@ public class ToolUIController : MonoBehaviour
     [SerializeField] private TMP_Text _toolName;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Image _toolIcon;
+    private InputSystem_Actions _playerInputActions;
 
     public void ConfigureTools(string _name, string _message, Sprite _icon)
     {
@@ -18,15 +19,6 @@ public class ToolUIController : MonoBehaviour
         {
             _toolIcon.sprite = _icon;
         }
-    }
-
-    public void Show()
-    {
-        gameObject.SetActive(true);
-    }
-
-    void Awake(){
-        gameObject.SetActive(false);
     }
     
 }
