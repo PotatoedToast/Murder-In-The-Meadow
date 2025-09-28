@@ -39,6 +39,10 @@ public class CountdownTimer : MonoBehaviour
                 }
             }
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) UseTool(1);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) UseTool(2);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) UseTool(3);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) UseTool(4);
     }
 
     void DisplayTime(float timeToDisplay) {
@@ -64,7 +68,25 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
-    void DisplayTimeWarning() {
+    void UseTool(int toolNumber) {
+        switch (toolNumber) {
+            case 1: 
+                ReduceTime(15f);
+                break;
+            case 2:
+                ReduceTime(10f);
+                break;
+            case 3:
+                break;
+            case 4: 
+                break;
+        }
+    }
 
+    void ReduceTime(float seconds) {
+        timeRemaining -= seconds;
+        if(timeRemaining < 0) {
+            timeRemaining = 0;
+        }
     }
 }
