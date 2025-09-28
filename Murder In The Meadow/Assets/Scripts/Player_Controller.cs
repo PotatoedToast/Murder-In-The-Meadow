@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System;
 
 [RequireComponent(typeof(CharacterController))]
@@ -25,10 +26,14 @@ public class Player_Movement : MonoBehaviour
 
     private void OnEnable(){
         _playerInputActions.Player.Enable();
+        _playerInputActions.Player.Tool.performed += UseTool; 
+
     }
     
     private void OnDisable(){
         _playerInputActions.Player.Disable();
+        _playerInputActions.Player.Tool.performed -= UseTool;
+
     }
 
     private void Update(){ 
@@ -73,5 +78,32 @@ public class Player_Movement : MonoBehaviour
                 // Assign the sprite you want to use when the character walks left
                 _spriteRenderer.sprite = walkLeftSprite;
             }
+    }
+
+    private void UseTool(InputAction.CallbackContext context)
+    {
+        string controlPath = context.control.path;
+
+        int toolIndex = -1; 
+    
+        switch (controlPath)
+        {
+            case "/Keyboard/1":
+                toolIndex = 0; // Index 0 for Tool 1
+                break;
+            case "/Keyboard/2":
+                toolIndex = 1; // Index 1 for Tool 2
+                break;
+            case "/Keyboard/3":
+                toolIndex = 2; // Index 2 for Tool 3
+                break;
+            case "/Keyboard/4":
+                toolIndex = 3; // Index 3 for Tool 4
+                break;
+            default:
+                return;
+        }
+        GameManager.Instance._ToolController.DisplayTool(toolIndex);
+
     }
 }
