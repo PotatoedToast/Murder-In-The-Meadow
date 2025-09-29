@@ -6,6 +6,7 @@ public class Interactable : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private InteractWindowScript windowController;
+    [SerializeField] private Sprite _objectSprite; 
 
 
     private Color _originalColor; 
@@ -21,7 +22,7 @@ public class Interactable : MonoBehaviour, IInteractable
     public void Interact(){
         if (windowController != null)
         {
-            windowController.OpenWindow(); 
+            windowController.OpenWindow(_objectSprite); 
         }
         else
         {

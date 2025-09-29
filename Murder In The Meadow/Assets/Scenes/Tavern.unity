@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
   windowController: {fileID: 1439142664}
+  _objectSprite: {fileID: 0}
 --- !u!65 &3945733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2730,6 +2731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractWindowScript
   _targetWindow: {fileID: 1201673155}
   _player: {fileID: 567278771}
+  displayImage: {fileID: 0}
 --- !u!4 &1439142665
 Transform:
   m_ObjectHideFlags: 0
@@ -3016,7 +3018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   timeRemaining: 0
   timerIsRunning: 0
-  timeout: {fileID: 0}
+  timeout: {fileID: 11400000, guid: b04099df7d9254904a5c3566cc0a71a0, type: 2}
   timeText: {fileID: 593590106}
 --- !u!114 &1667444650
 MonoBehaviour:

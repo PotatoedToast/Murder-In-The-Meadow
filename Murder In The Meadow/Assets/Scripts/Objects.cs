@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class Objects : MonoBehaviour
 {
 
-    public string toolNeeded;
-    public DialogueAsset success;
-    public DialogueAsset failure;
-    public Image icon;
+    [SerializeField] private string toolNeeded;
+    [SerializeField] private DialogueAsset success;
+    [SerializeField] private DialogueAsset failure;
+    [SerializeField] private Sprite icon;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
