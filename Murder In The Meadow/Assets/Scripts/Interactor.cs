@@ -33,6 +33,7 @@ public class Interactor : MonoBehaviour
 
     private void OnEnable(){
         _playerInputActions.Player.Enable();
+        interactRange = 1.5f;
     }
 
     private void OnDisable(){

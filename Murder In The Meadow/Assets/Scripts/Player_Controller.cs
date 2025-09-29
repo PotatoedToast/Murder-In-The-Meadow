@@ -7,7 +7,7 @@ using System;
 
 public class Player_Controller : MonoBehaviour
 {
-    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _speed = 3f;
 
     private InputSystem_Actions _playerInputActions;
     private Vector3 _input;
