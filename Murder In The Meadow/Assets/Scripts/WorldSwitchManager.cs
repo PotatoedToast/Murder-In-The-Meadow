@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 public class WorldSwitchManager : MonoBehaviour
 {
@@ -15,22 +16,41 @@ public class WorldSwitchManager : MonoBehaviour
     public string nextSceneName;
 
     private int currentSceneIndex;
+    public string upColliderName;
+    public string downColliderName;
 
     void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        questionText.gameObject.SetActive(false);
-        codeInput.gameObject.SetActive(false);
-        feedbackText.text = "";
+        // questionText.gameObject.SetActive(false);
+        // codeInput.gameObject.SetActive(false);
+        // feedbackText.text = "";
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            OpenPopup();
-        }
+        // if (Input.GetKeyDown(KeyCode.E))
+        // {
+        //     OpenPopup();
+        // }
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(currentSceneIndex);
         
+        if (other.tag == "Player")
+        {
+            if (gameObject.name == upColliderName)
+            {
+                SceneManager.LoadScene(currentSceneIndex - 1);
+            }
+            else if (gameObject.name == downColliderName)
+            {
+                SceneManager.LoadScene(currentSceneIndex + 1);
+            }
+        }
     }
 
     void OpenPopup()

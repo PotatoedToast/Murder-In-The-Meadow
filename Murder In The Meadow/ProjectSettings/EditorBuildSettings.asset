@@ -7,7 +7,16 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: 60742437438524aedbf7bfe4874bfbda
+  - enabled: 1
+    path: Assets/Scenes/Bedrooms.unity
+    guid: 5be1cd6cf321b314c970b6a015ab7596
+  - enabled: 1
+    path: Assets/Scenes/Tavern.unity
+    guid: aa74b7500e955bb42aa81aa34c2492e9
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: cc7758ced3b24b74dbb3b2cc9f7b66a3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
