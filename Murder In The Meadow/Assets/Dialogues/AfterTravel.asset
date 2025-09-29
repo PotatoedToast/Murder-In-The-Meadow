@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cd2c633612440b48260051703823f0, type: 3}
+  m_Name: AfterTravel
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  name: Derry the Platypus
+  dialogue:
+  - Wait a minute, did we just travel back in time?
+  - Does the journal want us to bring Bella's killer to justice?
+  - Interact with this journal with [Z] when you want to review the suspects or write
+    down notes.
+  - Time to start exploring, comrade.

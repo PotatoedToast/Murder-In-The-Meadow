@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+guid: 9a51c95523bf244ff9da2f11644b7852
+========
 guid: 415eac43493644f3882d24b7087cac0e
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
 TextureImporter:
-  internalIDToNameTable: []
+  fileIDToRecycleName: {}
   externalObjects: {}
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  serializedVersion: 7
+========
   serializedVersion: 13
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -24,23 +32,32 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+========
   vTOnly: 0
   ignoreMipmapLimit: 0
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 512
   textureSettings:
     serializedVersion: 2
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+========
     filterMode: 1
     aniso: 1
     mipBias: 0
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
     wrapU: 1
     wrapV: 1
-    wrapW: 0
-  nPOTScale: 0
+    wrapW: 1
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
@@ -52,24 +69,31 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  textureType: 0
+========
   textureType: 8
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  platformSettings:
+  - serializedVersion: 2
+========
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -79,10 +103,14 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  - serializedVersion: 2
+========
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -92,10 +120,38 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 512
+========
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -105,7 +161,6 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -113,17 +168,25 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+    spriteID: 
+========
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
     vertices: []
     indices: 
     edges: []
     weights: []
+<<<<<<<< HEAD:Murder In The Meadow/Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
+  spritePackingTag: 
+========
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable: {}
   mipmapLimitGroupName: 
+>>>>>>>> e108822df30995aa192936e2e66232aa931a1ad9:Murder In The Meadow/Assets/Images/Button.PNG.meta
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 

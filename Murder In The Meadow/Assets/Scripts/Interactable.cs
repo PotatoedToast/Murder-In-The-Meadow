@@ -6,6 +6,7 @@ public class Interactable : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private InteractWindowScript windowController;
+    [SerializeField] private Sprite _objectSprite; 
 
 
     private Color _originalColor; 
@@ -21,7 +22,7 @@ public class Interactable : MonoBehaviour, IInteractable
     public void Interact(){
         if (windowController != null)
         {
-            windowController.OpenWindow(); 
+            windowController.OpenWindow(_objectSprite); 
         }
         else
         {
@@ -39,7 +40,7 @@ public class Interactable : MonoBehaviour, IInteractable
     public void Highlight(bool isHighlighted){
         if (_renderer != null){
             if (isHighlighted){
-                float tintAmount = 0.1f; // Adjust this value (0.0 to 1.0)
+                float tintAmount = 0.5f; // Adjust this value (0.0 to 1.0)
                 _renderer.material.color = Color.Lerp(_originalColor, Color.white, tintAmount);
             } else {
                 _renderer.material.color = _originalColor; // Default color
