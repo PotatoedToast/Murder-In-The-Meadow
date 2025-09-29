@@ -368,8 +368,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jane Doe
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
-  m_sharedMaterial: {fileID: -5647826334201783400, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 027af58b1e7914139930a4eae21cd4e4, type: 2}
+  m_sharedMaterial: {fileID: -3582784475188018260, guid: 027af58b1e7914139930a4eae21cd4e4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -601,8 +601,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
-  m_sharedMaterial: {fileID: -5647826334201783400, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2023,8 +2023,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Write any useful notes here.\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
-  m_sharedMaterial: {fileID: -5647826334201783400, guid: 1163a3c8ea6a5452d8d5701da6614ff7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   name: Derry the Platypus
   dialogue:
-  - 'Wait a minute, did we just travel back in time? '
+  - Wait a minute, did we just travel back in time?
   - Does the journal want us to bring Bella's killer to justice?
-  - Interact with this journal with [Z] when you want to review the suspects or write down
-    notes.
-  - Time to start exploring, comrade!
+  - Interact with this journal with [Z] when you want to review the suspects or write
+    down notes.
+  - Time to start exploring, comrade.

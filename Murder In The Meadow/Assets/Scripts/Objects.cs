@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Objects : MonoBehaviour
 {
 
     public string toolNeeded;
-    public bool canInteract = false;
     public DialogueAsset success;
     public DialogueAsset failure;
+    public Image icon;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

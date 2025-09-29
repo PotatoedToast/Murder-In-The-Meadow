@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   name: Derry the Platypus
   dialogue:
-  - 'The murderer probably dropped this pocket watch during the crime. '
-  - 'But who among the suspects would own a pocket watch...? '
+  - The murderer probably dropped this pocket watch during the crime.
+  - But who among the suspects would own a pocket watch...?
   - Much to consider indeed.

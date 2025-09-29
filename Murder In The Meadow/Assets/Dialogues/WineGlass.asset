@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3cd2c633612440b48260051703823f0, type: 3}
   m_Name: WineGlass
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
-  name: Derry the Platypus
+  name: Perry the Datypus
   dialogue:
   - Huh. Looks like someone got a little tipsy.
   - I'm unsure what to conclude from this, though...
