@@ -7,4 +7,8 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void Restart(){
+        SceneManager.LoadScene(0);
+    }
 }

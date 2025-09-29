@@ -56,13 +56,13 @@ public class CountdownTimer : MonoBehaviour
     void SetTimerForScene() {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         switch (sceneIndex) {
-            case 0:
+            case 1:
                 timeRemaining = 240f;
                 break;
-            case 1:
+            case 2:
                 timeRemaining = 180f;
                 break;
-            case 2:
+            case 3:
                 timeRemaining = 120f;
                 break;
         }
