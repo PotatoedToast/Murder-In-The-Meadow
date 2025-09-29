@@ -1800,6 +1800,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 777022337100091519, guid: b3af7b2ee707443e88a93eb8e9fa0439, type: 3}
+      propertyPath: m_text
+      value: 'Exit [Q]
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 846719038834274087, guid: b3af7b2ee707443e88a93eb8e9fa0439, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
