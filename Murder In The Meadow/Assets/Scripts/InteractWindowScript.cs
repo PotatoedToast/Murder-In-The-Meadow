@@ -7,7 +7,6 @@ public class InteractWindowScript : MonoBehaviour
     [SerializeField] private GameObject _targetWindow;
     [SerializeField] private Player_Controller _player;
     [SerializeField] private Image displayImage;
-    private const float TOGGLE_INTERVAL = 5.0f; 
 
 
 
