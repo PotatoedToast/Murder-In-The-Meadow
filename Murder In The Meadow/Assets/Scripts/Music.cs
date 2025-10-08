@@ -16,7 +16,18 @@ public class MusicController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !isPaused)
+        if ((Input.GetKeyDown(KeyCode.Space) ||
+             Input.GetKeyDown(KeyCode.UpArrow) ||
+             Input.GetKeyDown(KeyCode.DownArrow) ||
+             Input.GetKeyDown(KeyCode.LeftArrow) ||
+             Input.GetKeyDown(KeyCode.RightArrow) ||
+             Input.GetKeyDown(KeyCode.E) ||
+             Input.GetKeyDown(KeyCode.W) ||
+             Input.GetKeyDown(KeyCode.A) ||
+             Input.GetKeyDown(KeyCode.S) ||
+             Input.GetKeyDown(KeyCode.D) ||
+             Input.GetKeyDown(KeyCode.Q) ||
+             Input.GetKeyDown(KeyCode.Z)) && !isPaused)
         {
             StartCoroutine(PauseBackgroundForSeconds(0f));
         }
