@@ -33,10 +33,19 @@ public class CountdownTimer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-                int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-                if (nextSceneIndex < SceneManager.sceneCountInBuildSettings) {
-                    SceneManager.LoadScene(nextSceneIndex);
-                }
+                SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+            }
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            switch (sceneIndex) {
+                case 1:
+                    PlayerPrefs.SetString("bedroom_time_remaining", System.Convert.ToString(timeRemaining));
+                    break;
+                case 2:
+                    PlayerPrefs.SetString("tavern_time_remaining", System.Convert.ToString(timeRemaining));
+                    break;
+                case 3:
+                    PlayerPrefs.SetString("basement_time_remaining", System.Convert.ToString(timeRemaining));
+                    break;
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha1)) UseTool(1);
@@ -57,13 +66,13 @@ public class CountdownTimer : MonoBehaviour
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         switch (sceneIndex) {
             case 1:
-                timeRemaining = 240f;
+                timeRemaining = (float) System.Convert.ToDouble(PlayerPrefs.GetString("bedroom_time_remaining"));
                 break;
             case 2:
-                timeRemaining = 180f;
+                timeRemaining = (float) System.Convert.ToDouble(PlayerPrefs.GetString("tavern_time_remaining"));
                 break;
             case 3:
-                timeRemaining = 120f;
+                timeRemaining = (float) System.Convert.ToDouble(PlayerPrefs.GetString("basement_time_remaining"));
                 break;
         }
     }
